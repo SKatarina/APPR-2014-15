@@ -1,4 +1,4 @@
-# Analiza podatkov s programom R, 2014/15
+ # Analiza podatkov s programom R, 2014/15
 
 Avtor: Katarina Šutar
 
@@ -6,8 +6,11 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2014/15.
 
 ## Tematika
 
-Izbrali si boste temo, s katero se bo vaš projekt ukvarjal. Tukaj boste
-napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
+Vsaka država se rada pohvali s svojimi športniki in tudi Slovenija ni izjema. Imamo nekaj vrhunskih smučarskih skakalcev, ki se lahko pohvalijo s svojimi izjemnimi rezultati svetovnega ranga. V svojem projektu bom primerjala osvojene zmage, nagrade in najvišje zaslužke po sezonah ženskih in moških tekmovalcev ter moške ekipne zmage. Analizirala bom tudi države zmagovalke svetovnega pokala glede na vse zmage (ločene po skakalnicah).Cilj je tudi primerjati rekorde najdaljših skokov po državah.
+
+V pomoč mi bodo podatki iz wikipedie:
+http://sl.wikipedia.org/wiki/Svetovni_pokal_v_smu%C4%8Darskih_skokih
+http://en.wikipedia.org/wiki/Ski_jumping
 
 ## Program
 
