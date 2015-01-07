@@ -3,47 +3,55 @@
 \usepackage[slovene]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{graphicx}
+\usepackage{url}
 
 \pagestyle{plain}
 
 \begin{document}
 \title{Poročilo pri predmetu \\
 Analiza podatkov s programom R}
-\author{Katarina Sutar}
+\author{Katarina Šutar}
 \maketitle
 
 \section{Izbira teme}
 
-Vsaka drzava se rada pohvali s svojimi sportniki in tudi Slovenija ni izjema. Imamo nekaj vrhunskih smucarskih skakalcev, ki se lahko pohvalijo s svojimi izjemnimi rezultati svetovnega ranga. To je eden izmed razlogov zakaj sem si izbrala temo svetovni pokal smucarskih skokov. V svojem projektu bom primerjala osvojene zmage, nagrade in najvisje zasluzke po sezonah zenskih in moskih tekmovalcev ter moske ekipne zmage. Analizirala bom tudi drzave zmagovalke svetovnega pokala glede na vse zmage (locene po skakalnicah).Cilj je tudi primerjati rekorde najdaljsih skokov po drzavah.
-
-V pomoc mi bodo podatki iz wikipedie: http://sl.wikipedia.org/wiki/Svetovni_pokal_v_smu%C4%8Darskih_skokih http://en.wikipedia.org/wiki/Ski_jumping
+Vsaka država se rada pohvali s svojimi športniki in tudi Slovenija ni izjema. Imamo nekaj vrhunskih smučarskih skakalcev, ki se lahko pohvalijo s svojimi izjemnimi rezultati svetovnega ranga. To je eden izmed razlogov zakaj sem si izbrala temo svetovni pokal smučarskih skokov. V svojem projektu bom primerjala osvojene zmage po sezonah ženskih in moških tekmovalcev ter moške ekipne zmage. Analizirala bom tudi države zmagovalke svetovnega pokala glede na vse zmage (ločene po skakalnicah). V pomoc mi bodo podatki iz wikipedie:
+\begin{itemize}
+\item \url{http://sl.wikipedia.org/wiki/Svetovni_pokal_v_smu%C4%8Darskih_skokih}
+\item \url{http://en.wikipedia.org/wiki/Ski_jumping}
+\end{itemize}
 
 
 \section{Obdelava, uvoz in čiščenje podatkov}
 
 V tej fazi sem najprej v excelu shranila 9 tabel iz Wikipedie v obliki csv. Nato pa sem jih uvozila v program R. V tabelah so podatki o številu ženskih in moških posameznih zmagah v svetovnem pokalu, ekipnih moških zmagah po državah, o številu osvojenih malih in velikih kristalnih globusov, ki so bronasti, srebrni ali zlati. Te podatke imam samo za moške tekmovalce. Vidni sta tudi dve tabeli, ki prikazujeta maksimalni zaslužek moških in ženskih tekmovalcev po sezonah. Znesek je v švicarskih frankih. Podatke imam tudi o posameznih zmagah po državah za 1., 2. in 3. mesto po sezonah od leta 2000 do 2014 in o največjih rekordih. To so najdaljši skoki, podani v metrih. Tabela vsebuje tudi podatek o letu rekorda, ime postavitelja rekorda, lokacijo, skakalnico in smuči. Potem, ko sem uvozila vse tabele sem naredila 5 grafov. 
 1. graf prikazuje moške tekmovalce, ki so osvojili največ zmag.
+
 \includegraphics[width=\textwidth]{../slike/Mzmage.pdf}
 
-2.graf prikazuje ženske tekmovalke, ki so osvojile največ zmag.
+2. graf prikazuje ženske tekmovalke, ki so osvojile največ zmag.
+
 \includegraphics[width=\textwidth]{../slike/Zzmage.pdf}
 
-3.graf prikazuje katere države so največkrat osvojile 1.mesto od leta 2000 do 2014.
+3. graf prikazuje katere države so največkrat osvojile 1. mesto od leta 2000 do 2014.
+
 \includegraphics[width=\textwidth]{../slike/pokali.pdf}
 
-4.graf prikazuje katere države so največkrat osvojile 2.mesto od leta 2000 do 2014.
+4. graf prikazuje katere države so največkrat osvojile 2. mesto od leta 2000 do 2014.
+
 \includegraphics[width=\textwidth]{../slike/pokali2.pdf}
 
-5.graf prikazuje katere države so največkrat osvojile 3.mesto od leta 2000 do 2014.
+5. graf prikazuje katere države so največkrat osvojile 3. mesto od leta 2000 do 2014.
+
 \includegraphics[width=\textwidth]{../slike/pokali3.pdf}
 
 
 \section{Analiza in vizualizacija podatkov}
 
-\includegraphics{../slike/povprecna_druzina.pdf}
+%\includegraphics{../slike/povprecna_druzina.pdf}
 
 \section{Napredna analiza podatkov}
 
-\includegraphics{../slike/naselja.pdf}
+%\includegraphics{../slike/naselja.pdf}
 
 \end{document}
