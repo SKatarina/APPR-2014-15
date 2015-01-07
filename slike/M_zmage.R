@@ -10,16 +10,16 @@ dev.off()
 
 
 pdf("slike/pokali.pdf") #naslov pdfja
-pie(table(pokali[,"Prva"]), main = "Največkrat osvojeno\n1. mesto po državah", cex.main = 1.5)
+pie(table(pokali[,"Prva"]), main = "Največkrat osvojeno\n1. mesto po državah (2000-2014)", cex.main = 1.5)
 #text(0,1,"Največkrat osvojeno\n1. mesto po državah", cex =2)
 dev.off()
 
 pdf("slike/pokali2.pdf") #naslov pdfja
-pie(table(pokali[,"Druga"]), main = "Največkrat osvojeno\n2. mesto po državah", cex.main = 1.5)
+pie(table(pokali[,"Druga"]), main = "Največkrat osvojeno\n2. mesto po državah (2000-2014)", cex.main = 1.5)
 #text(0,1,"Največkrat osvojeno\n2. mesto po državah", cex =2)
 dev.off()
 
 pdf("slike/pokali3.pdf") #naslov pdfja
-pie(table(pokali[,"Tretja"]), main = "Največkrat osvojeno\n3. mesto po državah", cex.main = 1.5)
+pie(table(pokali[,"Tretja"]), main = "Največkrat osvojeno\n3. mesto po državah (2000-2014)", cex.main = 1.5)
 #text(0,1,"Največkrat osvojeno\n3. mesto po državah", cex =2)
 dev.off()
