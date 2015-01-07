@@ -80,3 +80,11 @@ uvoziv.k.globus <- function() {
 
 cat("Uvažam podatke o tekmovalcih, ki so osvojili veliki kristalni globus ...\n")
 v.k.globus <- uvoziv.k.globus()
+
+uvozivsezmageskupaj <- function() {
+  return(read.table("podatki/vsezmageskupaj.csv", sep = ",", as.is = TRUE,
+                    header = TRUE, fileEncoding = "Windows-1250"))
+}
+
+cat("Uvažam podatke o državah, ki so kadarkoli vsaj enkrat dobile tekmo za svetovni pokal (23. marec 2014) ...\n")
+vsezmageskupaj <- uvozivsezmageskupaj()
