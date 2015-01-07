@@ -12,8 +12,12 @@ svet <- uvozi.zemljevid("http://www.naturalearthdata.com/http//www.naturalearthd
 barve <- topo.colors(max(vsezmageskupaj$Vse_zmage))[vsezmageskupaj$Vse_zmage]
 m <- match(svet$name_long, vsezmageskupaj$Drzava)
 
+u <- unique(vsezmageskupaj$Vse_zmage)
+u <- u[order(u)]
 
 plot(svet, col = barve[m])
+legend("left", legend = u, fill = topo.colors(max(vsezmageskupaj$Vse_zmage))[u], cex = 0.6)
+
 
 # # Funkcija, ki podatke preuredi glede na vrstni red v zemljevidu
 # preuredi <- function(podatki, zemljevid) {
