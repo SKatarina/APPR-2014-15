@@ -9,6 +9,8 @@ svet <- uvozi.zemljevid("http://www.naturalearthdata.com/http//www.naturalearthd
                         "svet", "ne_110m_admin_0_countries.shp", mapa = "zemljevid",
                         encoding = "Windows-1250")
 
+cat("Rišem zemljevid...\n")
+pdf("slike/Vse_zmage1.pdf", width=6, height=4)
 barve <- topo.colors(max(vsezmageskupaj$Vse_zmage))[vsezmageskupaj$Vse_zmage]
 m <- match(svet$name_long, vsezmageskupaj$Drzava)
 
@@ -17,7 +19,7 @@ u <- u[order(u)]
 
 plot(svet, col = barve[m])
 legend("left", legend = u, fill = topo.colors(max(vsezmageskupaj$Vse_zmage))[u], cex = 0.6)
-
+dev.off()
 
 # # Funkcija, ki podatke preuredi glede na vrstni red v zemljevidu
 # preuredi <- function(podatki, zemljevid) {
@@ -45,9 +47,7 @@ legend("left", legend = u, fill = topo.colors(max(vsezmageskupaj$Vse_zmage))[u],
 # min.povprecje <- min(druzine$povprecje, na.rm=TRUE)
 # max.povprecje <- max(druzine$povprecje, na.rm=TRUE)
 # 
-# # Narišimo zemljevid v PDF.
-# cat("Rišem zemljevid...\n")
-# pdf("slike/povprecna_druzina.pdf", width=6, height=4)
+# Narišimo zemljevid v PDF.
 # 
 # n = 100
 # barve = topo.colors(n)[1+(n-1)*(druzine$povprecje-min.povprecje)/(max.povprecje-min.povprecje)]
