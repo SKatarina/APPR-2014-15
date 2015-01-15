@@ -18,7 +18,8 @@ u <- unique(vsezmageskupaj$Vse_zmage)
 u <- u[order(u)]
 
 plot(svet, col = barve[m])
-legend("left", legend = u, fill = topo.colors(max(vsezmageskupaj$Vse_zmage))[u], cex = 0.6)
+title("Vse zmage do leta 2014 po državah")
+legend("left", legend = u, bg = "white", fill = topo.colors(max(vsezmageskupaj$Vse_zmage))[u], cex = 0.6)
 dev.off()
 
 # # Funkcija, ki podatke preuredi glede na vrstni red v zemljevidu
