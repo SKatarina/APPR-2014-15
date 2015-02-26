@@ -1,17 +1,21 @@
-Dolzina_m,Leto,Skakalec,Lokacija,Skalnica,Smuci
-"246,5 ",2011,Johan Remen Evensen,Vikersund,Vikersundbakken,Elan
-"244,5",2012,Anders Fannemel,Vikersund,Vikersundbakken,Elan
-244,2012,Robert Kranjec,Vikersund,Vikersundbakken,Fischer
-"243,5 ",2011,Gregor Schlierenzauer,Vikersund,Vikersundbakken,Fischer
-243,2011,Johan Remen Evensen,Vikersund,Vikersundbakken,Elan
-243,2012,Martin Koch,Vikersund,Vikersundbakken,Fischer
-243,2012,Rune Velta,Vikersund,Vikersundbakken,Fischer
-"241,5",2011,Martin Koch,Vikersund,Vikersundbakken,Fischer
-240,2005,Janne Ahonen,Planica,Letalnica bratov Gorisek,Atomic
-240,2011,Janne Happonen,Vikersund,Letalnica bratov Gorisek,Fischer
-240,2011,Johan Remen Evensen,Vikersund,Letalnica bratov Gorisek,Elan
-240,2012,Daiki Ito,Vikersund,Letalnica bratov Gorisek,Fischer
-239,2005,Bjørn Einar Romøren,Planica,Letalnica bratov Gorisek,Fischer
-"238,5 ",2011,Simon Ammann,Vikersund,Letalnica bratov Gorisek,Fischer
-"237,5",2011,Gregor Schlierenzauer,Vikersund,Letalnica bratov Gorisek,Fischer
-237,2011,Gregor Schlierenzauer,Vikersund,Letalnica bratov Gorisek,Fischer
+Dolzina_m,Leto,Skakalec,Drzava,Lokacija
+251.5,2015,Anders Fannemel,Norveska,Vikersundbakken
+250,2015,Peter Prevc,Slovenija,Vikersundbakken
+246.5,2011,Johan Remen Evensen,Norveska,Vikersundbakken
+243,2011,Johan Remen Evensen,Norveska,Vikersundbakken
+239,2005,Bjorn Einar Romoren,Norveska,Planica
+235.5,2005,Matti Hautamaki,Finska,Planica
+234.5,2005,Bjorn Einar Romoren,Norveska,Planica
+231,2005,Tommy Ingebrigtsen,Norveska,Planica
+231,2003,Matti Hautamaki,Finska,Planica
+228.5,2003,Matti Hautamaki,Finska,Planica
+227.5,2003,Matti Hautamaki,Finska,Planica
+225,2003,Adam Malysz,Poljska,Planica
+225,2002,Andreas Goldberger,Avstrija,Planica
+224.5,2002,Thomas Horl,Avstrija,Planica
+219.5,1999,Tommy Ingebrigtsen,Norveska,Planica
+214.4,1999,Martin Schmitt,Nemcija,Planica
+212,1997,Lasse Ottesen,Norveska,Planica
+210,1997,Espen Bredesen,Norveska,Planica
+209,1994,Espen Bredesen,Norveska,Planica
+203,1994,Toni Nieminen,Finska,Planica
