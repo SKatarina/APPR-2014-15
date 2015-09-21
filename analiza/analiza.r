@@ -11,6 +11,7 @@ plot(Leto, Dolzina_m, xlim=c(1994, 2020), ylim=c(200, 280),
 lin <- lm(Dolzina_m ~ Leto)
 abline(lin)
 detach(rekordi)
+title("Rekordi od leta 1994 do 2015")
 dev.off()
 premica <- function(x) {
   
@@ -28,8 +29,8 @@ barve <- rainbow(length(drzave))
 plot(Leto, Dolzina_m, xlim=c(1994, 2020), ylim=c(200, 280),
      col = barve[match(Drzava, drzave)],
      pch = ifelse(Lokacija == "Planica", 18, 15))
-lin <- lm(Dolzina_m ~ Leto)
-abline(lin)
+linn <- lm(Dolzina_m ~ Leto)
+abline(linn)
 detach(rekordi1)
 title("Rekordi od leta 1994 do 2014")
 dev.off()
@@ -37,3 +38,6 @@ premica <- function(x) {
   
   2.460698*x-4701.097011
 }
+
+
+
