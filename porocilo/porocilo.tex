@@ -4,7 +4,6 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{graphicx}
 \usepackage{url}
-
 \pagestyle{plain}
 
 \begin{document}
@@ -15,7 +14,7 @@ Analiza podatkov s programom R}
 
 \section{Izbira teme}
 
-Vsaka država se rada pohvali s svojimi športniki in tudi Slovenija ni izjema. Imamo nekaj vrhunskih smučarskih skakalcev, ki se lahko pohvalijo s svojimi izjemnimi rezultati svetovnega ranga. To je eden izmed razlogov zakaj sem si izbrala temo svetovni pokal smučarskih skokov. V svojem projektu bom primerjala osvojene zmage po sezonah ženskih in moških tekmovalcev ter moške ekipne zmage. Analizirala bom tudi države zmagovalke svetovnega pokala glede na vse zmage (ločene po skakalnicah). V pomoc mi bodo podatki iz wikipedie:
+Vsaka država se rada pohvali s svojimi športniki in tudi Slovenija ni izjema. Imamo nekaj vrhunskih smučarskih skakalcev, ki se lahko pohvalijo s svojimi izjemnimi rezultati svetovnega ranga. To je eden izmed razlogov zakaj sem si izbrala temo svetovni pokal v smučarskih skokih in poletih. V svojem projektu bom primerjala osvojene zmage po sezonah ženskih in moških tekmovalcev ter moške ekipne zmage. Analizirala bom tudi države zmagovalke svetovnega pokala glede na vse zmage (ločene po skakalnicah). V pomoc mi bodo podatki iz wikipedie:
 \begin{itemize}
 \item \url{http://sl.wikipedia.org/wiki/Svetovni_pokal_v_smu%C4%8Darskih_skokih}
 \item \url{http://en.wikipedia.org/wiki/Ski_jumping}
@@ -59,9 +58,24 @@ V 3. fazi sem uvozila novo tabelo iz Wikipedie, ki prikazuje vse države, ki so 
 \includegraphics[width=1.2\textwidth]{../slike/Vse_zmage1.pdf}
 }
 
+\newpage
+\section{Napredna analiza podatkov}
+V četrti fazi sem uvozila novo tabelo, ki prikazuje rekorde v smučarskih poletih od leta 1994 do leta 2015. Odločila sem se, da bom analizirala kako se bodo rekordi spreminjali v prihodnje. Pri tem sem uporabila linearen model.
 
-%\section{Napredna analiza podatkov}
+Prvi graf prikazuje analizo rekordov vključno s podatkom za leto 2015. Enačba premice: $$ y=-4270.832061 + 2.245608x$$
 
-%\includegraphics{../slike/naselja.pdf}
+\includegraphics[width=\textwidth]{../slike/Rekordi.pdf}
+
+Odločila sem se, da naredim še en graf, ki prikazuje analizo rekordov, ki ne vključuje podatka za leto 2015. Enačba premice: $$y=-4701.097011 + 2.460698x$$
+
+\includegraphics[width=\textwidth]{../slike/Rekordi1.pdf}
+
+Spremenljivka x pri obeh grafih predstavlja leto rekorda, spremenljivka y pa dolžino rekorda v metrih.
+
+Napoved rekorda za leto 2015 je 257.209 metrov, če ne upoštevamo dejanskega podatka za leto 2015 (drugi graf).Napoved je previsoka, ker je bil dejanski rekord v tem letu 251.5 metrov.
+
+Če primerjamo oba grafa opazimo, da dobimo drugačne napovedi. Če leto 2015 izvzamemo iz podatkov rekordi hitreje naraščajo. Bolj realne napovedi dobimo, če upoštevamo podatke za leto 2015, saj že iz izračuna rekorda pri drugem grafu za leto 2015 vidimo, da je previsok glede na dejanski rekord postavljen v tem letu.
+
+
 
 \end{document}
